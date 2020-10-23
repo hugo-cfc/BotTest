@@ -33,7 +33,6 @@ const puppeteer = require('puppeteer');
     await page.goto(urlPhrases)
 
     phrase = await page.evaluate(() => {
-      console.log('Chegou aqui')
       return document.querySelector('.sentence.sentence-exited').textContent
     })
     
